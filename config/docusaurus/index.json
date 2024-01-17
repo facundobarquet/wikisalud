@@ -8,35 +8,16 @@
       "position": "left"
     },
     {
-      "label": "Blog",
+      "label": "Errores",
       "link": "blog",
       "position": "left"
-    },
-    {
-      "label": "MDX Page",
-      "link": "page",
-      "docLink": "src/pages/Test-MDX-Page.mdx",
-      "pageLink": "src/pages/Test-MDX-Page.mdx",
-      "position": "left"
-    },
-    {
-      "label": "Docusaurus GitHub",
-      "link": "external",
-      "externalLink": "https://github.com/facebook/docusaurus",
-      "position": "right"
-    },
-    {
-      "label": "Tina",
-      "link": "external",
-      "externalLink": "https://tina.io/",
-      "position": "right"
     }
   ],
   "logo": {
-    "alt": "Tina",
-    "src": "/img/tina-icon.svg"
+    "alt": "Salud Digital",
+    "src": "/img/logo_wo_bg.png"
   },
-  "title": "Tinasaurus",
+  "title": "WikiSalud",
   "footer": {
     "style": "dark",
     "links": [
@@ -51,41 +32,28 @@
         ]
       },
       {
-        "title": "Community",
+        "title": "Más Información",
         "items": [
           {
-            "label": "Stack Overflow",
-            "href": "https://stackoverflow.com/questions/tagged/docusaurus",
-            "_template": "external"
-          },
-          {
-            "label": "Discord",
-            "href": "https://discordapp.com/invite/docusaurus",
-            "_template": "external"
-          },
-          {
-            "label": "Twitter",
-            "href": "https://twitter.com/docusaurus",
+            "label": "Centro de Conocimiento",
+            "href": "https://centrodeconocimiento.agesic.gub.uy/web/salud.uy",
             "_template": "external"
           }
         ]
       },
       {
-        "title": "More",
+        "title": "Repositorio",
         "items": [
           {
-            "label": "Blog",
-            "_template": "blog"
-          },
-          {
             "label": "GitHub",
-            "href": "https://github.com/facebook/docusaurus",
+            "href": "https://github.com/facundobarquet/wikisalud",
             "_template": "external"
           }
         ]
       }
     ],
-    "copyright": "My Project, Inc. Built with Docusaurus."
+    "copyright": "WikiSalud, Built with Docusaurus & TinaCMS."
   },
-  "url": "https://tinasaurus.vercel.app/"
+  "url": "https://tinasaurus.vercel.app/",
+  "tagline": "Guias para Salud Digital"
 }

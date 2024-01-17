@@ -48,7 +48,7 @@ const RestartWarning = () => {
 
 const PostCollection = {
   name: "post",
-  label: "Posts",
+  label: "Error Posts",
   path: "blog",
   format: "mdx",
   ui: {
@@ -403,10 +403,6 @@ const NavbarItemFields = [
         value: "doc",
       },
       {
-        label: "Page",
-        value: "page",
-      },
-      {
         label: "Blog",
         value: "blog",
       },
@@ -434,31 +430,6 @@ const NavbarItemFields = [
         }, [props.tinaForm.values]);
 
         if (link !== "doc") {
-          return null;
-        }
-
-        return ReferenceField(props);
-      },
-    },
-  },
-  {
-    name: "pageLink",
-    label: "Page",
-    type: "reference",
-    collections: ["pages"],
-    ui: {
-      component: (props) => {
-        const link = React.useMemo(() => {
-          let fieldName = props.field.name;
-          fieldName =
-            fieldName.substring(0, fieldName.lastIndexOf(".")) || fieldName;
-
-          return fieldName
-            .split(".")
-            .reduce((o, i) => o[i], props.tinaForm.values).link;
-        }, [props.tinaForm.values]);
-
-        if (link !== "page") {
           return null;
         }
 
@@ -679,7 +650,7 @@ const SettingsCollection = {
                       type: "reference",
                       label: "Page",
                       name: "to",
-                      collections: ["doc", "pages", "post"],
+                      collections: ["doc", "post"],
                     },
                   ],
                 },
@@ -790,33 +761,6 @@ const HomepageCollection = {
   ],
 };
 
-const PagesCollection = {
-  name: "pages",
-  label: "Pages",
-  path: "src/pages",
-  format: "mdx",
-  fields: [
-    {
-      type: "string",
-      name: "title",
-      label: "Title",
-      isTitle: true,
-      required: true,
-    },
-    {
-      type: "string",
-      name: "description",
-      label: "Description",
-    },
-    {
-      type: "rich-text",
-      name: "body",
-      label: "Body",
-      isBody: true,
-      templates: [...MDXTemplates],
-    },
-  ],
-};
 
 export default defineConfig({
   branch,
@@ -834,11 +778,10 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      DocsCollection,
-      PostCollection,
       HomepageCollection,
-      PagesCollection,
+      DocsCollection,
       SidebarCollection,
+      PostCollection,
       SettingsCollection,
     ],
   },

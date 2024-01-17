@@ -1,0 +1,20 @@
+---
+title: Error 1
+authors:
+  - name: Facundo Barquet
+    image_url: '      https://media.licdn.com/dms/image/D4D0BAQHKNZGSDdC7Jg/company-logo_200_200/0/1694532758329/salud_uy_logo?e=1713398400&v=beta&t=yfatnB73w8Eh8mNdKcWBeww-XC13waeT3tvksGtBrSY'
+date: '2024-01-16'
+tags:
+  - appliance
+  - internal error
+---
+
+**Instancia:** Al mandar ITI41, ITI42, ITI57.
+
+**Mensaje de Error:** `[] Internal error  -1`
+
+**Componente que Falla:** AppliancePS, repercute en PDI.
+
+**Motivo del Error:** Atributo xml\:lang vacío.
+
+**Solución:** El valor xml\:lang debe ser "es-uy". Se modificó comportamiento del Appliance (v9.0) para que si xml\:lang viene vacío, rellene automáticamente con el valor correcto.

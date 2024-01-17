@@ -62,7 +62,7 @@ const formatNavbarItem = (item, subnav = false) => {
   }
 
   if (item.link === "blog") {
-    navItem.to = "/blog";
+    navItem.to = "/blog/intro";
   }
 
   if (item.link === "page" && item.pageLink) {
@@ -86,19 +86,19 @@ const formatNavbarItem = (item, subnav = false) => {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: docusaurusData.title || "My Site",
-  tagline: docusaurusData.tagline || "Dinosaurs are cool",
+  title: "Salud Digital",
+  tagline: docusaurusData.tagline || "Guias para Salud Digital",
   url: docusaurusData.url || "https://tinasaurus.vercel.app/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo_wo_bg.png",
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "es",
+    locales: ["es"],
   },
 
   presets: [
@@ -129,10 +129,10 @@ const config = {
         logo: {
           alt: docusaurusData?.logo?.alt
             ? docusaurusData?.logo?.alt
-            : "My Logo",
+            : "Logo",
           src: docusaurusData?.logo?.src
             ? docusaurusData?.logo?.src
-            : "img/logo.svg",
+            : "img/logo_wo_bg.png",
         },
         items: docusaurusData.navbar.map((item) => {
           return formatNavbarItem(item);
