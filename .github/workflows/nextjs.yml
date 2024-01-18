@@ -80,11 +80,11 @@ jobs:
         run: yarn build
         # This assumes that your "build" script in your
         # package.json is "tinacms build"
-      - name: Build with Next.js
+      #- name: Build with Next.js
         # ${{ steps.detect-package-manager.outputs.runner }} 
-        run: npx next build
-      - name: Static HTML export with Next.js
-        run: npx next export
+      #  run: npx next build
+      #- name: Static HTML export with Next.js
+      #  run: npx next export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
