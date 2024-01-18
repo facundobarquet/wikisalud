@@ -152,6 +152,14 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    plugins: [
+      [
+        require.resolve("@cmfcmf/docusaurus-search-local"),
+        {
+          language: "es"
+        },
+      ],
+    ]
 };
 
 module.exports = config;
