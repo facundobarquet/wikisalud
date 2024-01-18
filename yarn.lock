@@ -9092,11 +9092,6 @@ neo-async@^2.6.2:
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-nextjs@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/nextjs/-/nextjs-0.0.3.tgz"
-  integrity sha512-mYbDUo4/sRAZ8TqK63PCpYnFiLg7BICG/ot9+guOrUKd4/Fo71ZmEQ41IZbH6nqbQvG7SXTBuofJXAIWfNho0w==
-
 ngraminator@3.0.2:
   version "3.0.2"
   resolved "https://registry.npmjs.org/ngraminator/-/ngraminator-3.0.2.tgz"
