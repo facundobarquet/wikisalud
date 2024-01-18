@@ -85,10 +85,12 @@ jobs:
       #  run: npx next build
       #- name: Static HTML export with Next.js
       #  run: npx next export
+      - name: Build Docusaurus
+        run: docusaurus build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./build
 
   # Deployment job
   deploy:
