@@ -14,17 +14,17 @@
         {
           "title": "Catálogo de Soluciones",
           "description": "Información sobre los productos y soluciones que brinda Salud Digital.\n",
-          "image": "/img/undraw_folder_files_re_2cbm.svg"
+          "image": "/img/undraw_docusaurus_mountain.svg"
         },
         {
           "title": "Historial de Errores",
           "description": "Registro de errores encontrados para facilitar su resolución en futuras instancias.\n",
-          "image": "./img/undraw_access_denied_re_awnf.svg"
+          "image": "/img./undraw_access_denied_re_awnf.svg"
         },
         {
           "title": "Más",
           "description": "",
-          "image": "./img/undraw_save_to_bookmarks_re_8ajf.svg"
+          "image": "/img./undraw_save_to_bookmarks_re_8ajf.svg"
         }
       ],
       "_template": "features"
