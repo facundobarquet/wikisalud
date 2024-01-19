@@ -89,7 +89,7 @@ const config = {
   title: "Salud Digital",
   tagline: docusaurusData.tagline || "Guias para Salud Digital",
   url: docusaurusData.url || "https://tinasaurus.vercel.app/",
-  baseUrl: "/wikisalud/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logo_wo_bg.png",

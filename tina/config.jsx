@@ -769,11 +769,11 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: "static",
-    basePath: "wikisalud"
+    //basePath: "wikisalud"
   },
   media: {
     tina: {
-      mediaRoot: "/wikisalud/img",
+      mediaRoot: "img",
       publicFolder: "static"
     },
   },
