@@ -773,7 +773,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "img",
+      mediaRoot: "wikisalud/img",
       publicFolder: "static"
     },
   },
